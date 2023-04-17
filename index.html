@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SPLI<br />TTER</h1>
+    </header>
+    <main>
+      <div class="inputs-container">
+        <label for="bill"
+          >Bill
+          <input
+            type="number"
+            class="bill"
+            id="bill"
+            name="bill"
+            placeholder="0"
+          />
+        </label>
+        <div class="tips">
+          <h2>Select Tip %</h2>
+          <div class="tips-container">
+            <button class="tip" id="5%">5%</button>
+            <button class="tip" id="10%">10%</button>
+            <button class="tip" id="15%" active="false">15%</button>
+            <button class="tip" id="25%">25%</button>
+            <button class="tip" id="50%">50%</button>
+            <input
+              type="number"
+              id="custom"
+              class="custom"
+              placeholder="custom"
+            />
+          </div>
+        </div>
+        <label for="number-of-people"
+          >Number of People
+          <input
+            type="number"
+            id="number"
+            class="number"
+            placeholder="0"
+            empty="false"
+          />
+        </label>
+      </div>
+      <div class="outputs-container">
+        <div class="totals">
+          <div class="total-amount">
+            <div class="amount-label">
+              <span class="label-main">Tip Amount</span>
+              <span class="label-sub">/ person</span>
+            </div>
+            <div class="amount-figure" id="tip-amount">$0.00</div>
+          </div>
+          <div class="total-amount">
+            <div class="amount-label">
+              <span class="label-main">Total</span>
+              <span class="label-sub">/ person</span>
+            </div>
+            <div class="amount-figure" id="total">$0.00</div>
+          </div>
+        </div>
+        <button class="reset-button" id="reset-button">RESET</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
